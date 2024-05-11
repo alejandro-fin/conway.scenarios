@@ -32,6 +32,14 @@ working_branch                      = "testrobot"
 bc_path                             = "/mnt/c/Program Files/Beyond Compare 4/BCompare.exe"
 win_cred_path                       = "/mnt/c/Program Files (x86)/Git Credential Manager/git-credential-manager.exe"
 
+# Normally, this setting should not be included in profile, or at worst it shoudl be set to "false".
+# Here we set it to "True" only because it this is a profile for a test robot that manipulates discardable GitHub repos.
+# The test robot needs the access token to be included in its local git configuration's remote URL, since the test
+# robot is not known to Windows credentials. Otherwise the test robot wouldn't be able to push to the remote. 
+# That is why this setting is activated in this profile.
+#
+ok_to_display_token                 = true
+
     [git.user]
 
     name                            = "testrobot-ccl"
