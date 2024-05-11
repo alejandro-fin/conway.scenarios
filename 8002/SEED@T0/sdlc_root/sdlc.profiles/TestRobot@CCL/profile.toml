@@ -1,0 +1,39 @@
+[local_development]
+
+# The 'root' setting determines the folder in the local machine under which projects should be cloned
+# for development purposes.
+# Thus, the root folder would contain a project sub-folder, and the project sub-folder would contain the clones
+# for repos belonging to that projtect.
+#
+dev_root                            = "$CHASSIS_SCENARIOS_REPO/8002/ACTUALS@T0/TestRobot@CCL/dev"
+
+[operate]
+
+# The 'root' settin determines the folder in the local machine under which projects should be cloned
+# for operate purposes.
+# Thus, the root folder would contain a project sub-folder, and the project sub-folder would contain the clones
+# for repos belonging to that projtect.
+#
+operate_root                        = "$CHASSIS_SCENARIOS_REPO/8002/ACTUALS@T0/TestRobot@CCL/operate"
+
+[projects]
+
+    [projects.scenario_8002]
+
+    repos                           = [ "scenario_8002.svc",         "scenario_8002.test",        "scenario_8002.scenarios", 
+                                        "scenario_8002.ops",         "scenario_8002.acceptance"]
+    ops_repo                        = "scenario_8002.ops"
+    repo_bundle_class               = "scenario_8002.onboarding.chassis_repo_bundle.Chassis_RepoBundle"
+
+[git]
+
+github_organization                 = "testrobot-ccl"
+working_branch                      = "testrobot"
+bc_path                             = "/mnt/c/Program Files/Beyond Compare 4/BCompare.exe"
+win_cred_path                       = "/mnt/c/Program Files (x86)/Git Credential Manager/git-credential-manager.exe"
+
+    [git.user]
+
+    name                            = "testrobot-ccl"
+    email                           = "testrobot@chateauclaudia-labs.com"
+
