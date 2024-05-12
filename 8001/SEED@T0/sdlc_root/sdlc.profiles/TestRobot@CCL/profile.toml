@@ -5,11 +5,11 @@
 # Thus, the root folder would contain a project sub-folder, and the project sub-folder would contain the clones
 # for repos belonging to that projtect.
 #
-dev_root                            = "$CHASSIS_SCENARIOS_REPO/8002/ACTUALS@latest/bundled_repos_local"
+dev_root                            = "$CHASSIS_SCENARIOS_REPO/8001/ACTUALS@latest/bundled_repos_local"
 
 [operate]
 
-# The 'root' setting determines the folder in the local machine under which projects should be cloned
+# The 'root' settin determines the folder in the local machine under which projects should be cloned
 # for operate purposes.
 # Thus, the root folder would contain a project sub-folder, and the project sub-folder would contain the clones
 # for repos belonging to that projtect.
@@ -18,12 +18,12 @@ operate_root                        = ""
 
 [projects]
 
-    [projects.scenario_8002]
+    [projects.scenario_8001]
 
-    repos                           = [ "scenario_8002.svc",         "scenario_8002.test",        "scenario_8002.scenarios", 
-                                        "scenario_8002.ops",         "scenario_8002.docs"]
-    ops_repo                        = "scenario_8002.ops"
-    repo_bundle_class               = "scenario_8002_ops.onboarding.scenario_8002_repo_bundle.Scenario_8002_RepoBundle"
+    repos                           = [ "scenario_8001.svc",         "scenario_8001.test",        "scenario_8001.scenarios", 
+                                        "scenario_8001.ops",         "scenario_8001.acceptance"]
+    ops_repo                        = "scenario_8001.ops"
+    repo_bundle_class               = "scenario_8001_ops.onboarding.scenario_8001_repo_bundle.Scenario_8001_RepoBundle"
 
 [git]
 
@@ -46,7 +46,7 @@ ok_to_display_token                 = true
 # However, for profiles used for testing, it can be set to true if the remote repos are expected to live in
 # the file system instead of in GitHub.
 #
-remote_is_local                     = false
+remote_is_local                     = true
 
     [git.user]
 
