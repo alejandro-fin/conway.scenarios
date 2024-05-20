@@ -5,7 +5,7 @@
 # Thus, the root folder would contain a project sub-folder, and the project sub-folder would contain the clones
 # for repos belonging to that projtect.
 #
-dev_root                            = "$CHASSIS_SCENARIOS_REPO/8002/ACTUALS@latest/bundled_repos_local"
+dev_root                            = "$SCENARIOS_REPO/8002/ACTUALS@latest/bundled_repos_local"
 
 [operate]
 
