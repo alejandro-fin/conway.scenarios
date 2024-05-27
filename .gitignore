@@ -19,6 +19,10 @@ build/
 ACTUALS@*/
 RUN_NOTES/
 
+# Potentially used by some Conway-based applications to save logs
+#
+logs/
+
 # Used to hold GitHub credentials for TestRobot@CCL
 #
 secrets.yaml
